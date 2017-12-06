@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "copy": "cp ./node_modules/@webcomponents/webcomponentsjs/{custom-elements-es5-adapter,webcomponents-lite}.js public",
+    "bundle": "rollup -c",
+    "build": "npm run copy && npm run bundle"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.20",
+    "skatejs": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.52.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}

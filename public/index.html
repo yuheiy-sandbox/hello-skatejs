@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello SkateJS</title>
+    <script>
+      (function() {
+        function script(src, done) {
+          var scr = document.createElement('script')
+          scr.async = false
+          scr.onload = done
+          scr.src = src
+          document.head.appendChild(scr)
+        }
+
+        script(
+          window.customElements
+            ? '/custom-elements-es5-adapter.js'
+            : '/webcomponents-lite.js',
+          script.bind(null, '/bundle.js')
+        )
+      })()
+    </script>
+  </head>
+
+  <body>
+    <x-hello>Bob</x-hello>
+  </body>
+</html>

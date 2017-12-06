@@ -1,0 +1,4 @@
+node_modules
+public/bundle.js
+public/custom-elements-es5-adapter.js
+public/webcomponents-lite.js
